@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from "next/document";
+import Document, { Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
@@ -46,6 +46,10 @@ export default class MyDocument extends Document {
             type="image/png"
             sizes="192x192"
             href="/static/icons/icon-192x192.png"
+          />
+          <link
+            rel="stylesheet"
+            href="../static/scss/custom-bootstrap-4.1.3.css"
           />
         </Head>
         <body>

@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Head from "next/head";
-import Router from "next/router";
-
+import Link from 'next/link';
+import Head from 'next/head';
+import Router from 'next/router';
+import { Button } from 'reactstrap';
 const Layout = ({ children, title, description, backButton }) => (
   <div>
     <Head>
@@ -19,6 +19,9 @@ const Layout = ({ children, title, description, backButton }) => (
           <a>
             <span className="main-title">Hacker Next</span>
           </a>
+        </Link>
+        <Link href="/articles">
+          <Button className="ml-5">Articles</Button>
         </Link>
       </nav>
 
